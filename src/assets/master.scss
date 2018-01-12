@@ -1,0 +1,23 @@
+.flag {
+  background-image: url("assets/flags-sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 16px;
+  height: 11px;
+
+  &--RO {
+    background-position: -5px -3px;
+  }
+  &--FR {
+    background-position: -26px -3px;
+  }
+  &--ES {
+    background-position: -47px -3px;
+  }
+  &--DE {
+    background-position: -68px -3px;
+  }
+  &--EN {
+    background-position: -89px -3px;
+  }
+}
