@@ -58,6 +58,7 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
+
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
@@ -91,7 +92,7 @@ if (process.env.NODE_ENV === 'production') {
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({
       'process.env': {
-        NODE_ENV: '"production"'
+        NODE_ENV: 'production browserify -g envify -e main.js | uglifyjs -c -m > build.js'
       }
     }),
     new webpack.optimize.UglifyJsPlugin({

@@ -1,6 +1,6 @@
 <template>
 		<header class="bg-primary rounded-top p-3">
-            <h3 class="d-inline-block text-white">Currency Converter {{title}}</h3>
+            <h3 class="d-inline-block text-white">Currency Converter</h3>
             <ul class="d-inline-block float-right">
                 <li class="list-inline-item align-text-bottom" v-for="flag in flags"><i :class="flag"></i></li>
             </ul>
@@ -16,6 +16,5 @@
 	}
 </script>
 <style scoped>
-/* atribultul scope se pune doar daca vrei ca stylul de aici sa se aplice doar acestei coponente*/
 
 </style>
